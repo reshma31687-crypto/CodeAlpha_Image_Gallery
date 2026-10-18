@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Explore the Gallery</h1>
+        <p>Discover beautiful moments through pictures.</p>
+    </header>
+
+    <main>
+        <nav class="filters">
+            <button class="filter-btn active" data-filter="all">All Photos</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+        </nav>
+
+        <section class="gallery">
+
+            <button class="gallery-card" data-category="nature"
+                data-full="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=85"
+                data-title="Mountain Lake">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80" alt="Mountain Lake">
+                <span>Mountain Lake</span>
+            </button>
+
+            <button class="gallery-card" data-category="animals"
+                data-full="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=1600&q=85"
+                data-title="Curious Fox">
+                <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=600&q=80" alt="Curious Fox">
+                <span>Curious Fox</span>
+            </button>
+
+            <button class="gallery-card" data-category="architecture"
+                data-full="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1600&q=85"
+                data-title="Modern Building">
+                <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=80" alt="Modern Building">
+                <span>Modern Building</span>
+            </button>
+
+            <button class="gallery-card" data-category="nature"
+                data-full="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=85"
+                data-title="Green Forest">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=80" alt="Green Forest">
+                <span>Green Forest</span>
+            </button>
+
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button id="closeBtn" class="close-btn" aria-label="Close">&times;</button>
+        <button id="prevBtn" class="nav-btn" aria-label="Previous image">&#10094;</button>
+
+        <figure>
+            <img id="lightboxImage" src="" alt="">
+            <figcaption id="lightboxCaption"></figcaption>
+        </figure>
+
+        <button id="nextBtn" class="nav-btn" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+                            
